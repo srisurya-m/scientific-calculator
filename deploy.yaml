@@ -38,4 +38,4 @@
         state: started
         interactive: yes
         tty: yes
-        detach: yes # Run the container in background
+        detach: yes # Run the container in the background
