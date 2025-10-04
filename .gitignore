@@ -18,6 +18,3 @@ runTests
 
 # Log files
 *.log
-
-# others
-.dockerignore
