@@ -28,4 +28,4 @@ WORKDIR /app
 COPY --from=builder /app/build/calculator .
 
 # Set the command to run when the container starts
-CMD ["./calculator"]
+CMD ["/bin/bash"]
