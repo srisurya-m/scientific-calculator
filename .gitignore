@@ -1,20 +1,11 @@
-# Build directory
 build/
-
-# Cmake files
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
-
-# Executables
 *.out
 *.exe
 calculator
 runTests
-
-# Object files
 *.o
-
-# Log files
 *.log

@@ -6,7 +6,7 @@
 
 class OperationFactory {
 public:
-    static IOperation* createOperation(const std::string& type);
+    static IOperation* createOperation(const string& type);
 };
 
 #endif

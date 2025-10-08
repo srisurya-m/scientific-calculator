@@ -9,7 +9,7 @@ private:
 
 public:
     CalculatorFacade();
-    double perform(const std::string& type, double a, double b = 0);
+    double perform(const string& type, double a, double b = 0);
 };
 
 #endif

@@ -33,18 +33,21 @@ int main() {
                 cin >> num1;
                 cout << "Result: " << calc.perform(operation, num1) << endl;
                 break;
+
             case 2:
                 operation = "fact";
                 cout << "Enter a number: ";
                 cin >> num1;
                 cout << "Result: " << calc.perform(operation, num1) << endl;
                 break;
+
             case 3:
                 operation = "ln";
                 cout << "Enter a number: ";
                 cin >> num1;
                 cout << "Result: " << calc.perform(operation, num1) << endl;
                 break;
+
             case 4:
                 operation = "pow";
                 cout << "Enter the base: ";
@@ -53,6 +56,7 @@ int main() {
                 cin >> num2;
                 cout << "Result: " << calc.perform(operation, num1, num2) << endl;
                 break;
+                
             default:
                 cout << "Invalid choice. Please try again." << endl;
                 break;
