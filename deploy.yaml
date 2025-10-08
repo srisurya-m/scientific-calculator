@@ -34,8 +34,8 @@
     - name: Run the Docker container
       community.docker.docker_container:
         name: scientific-calculator-app
-        image: "surya162/scientific-calculator-image:{{ docker_image_tag }}" # And also here
+        image: "surya162/scientific-calculator-image:{{ docker_image_tag }}" 
         state: started
         interactive: yes
         tty: yes
-        detach: yes # Run the container in the background
+        detach: yes

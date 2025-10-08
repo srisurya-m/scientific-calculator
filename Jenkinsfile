@@ -48,12 +48,29 @@ pipeline {
         }
     }
 
-    post {
+     post {
         // This block runs after all stages are completed
         always {
             echo 'Pipeline finished. Cleaning up...'
-            // Clean up old Docker images to save space
             sh "docker logout"
+        }
+        success {
+            // Send an email if the pipeline is successful
+            mail to: 'srisurya.makkapati@gmail.com',
+                 subject: "SUCCESS: Pipeline '${env.JOB_NAME}' (${env.BUILD_NUMBER})",
+                 body: "Hooray! The pipeline finished successfully. Check the build details here: ${env.BUILD_URL}"
+        }
+        failure {
+            // Send an email if the pipeline fails
+            mail to: 'srisurya.makkapati@gmail.com',
+                 subject: "FAILURE: Pipeline '${env.JOB_NAME}' (${env.BUILD_NUMBER})",
+                 body: "Oops! The pipeline has failed. Please check the console output for errors: ${env.BUILD_URL}"
+        }
+        unstable {
+            // Send an email if the pipeline is unstable (e.g., tests passed but with issues)
+            mail to: 'srisurya.makkapati@gmail.com',
+                 subject: "UNSTABLE: Pipeline '${env.JOB_NAME}' (${env.BUILD_NUMBER})",
+                 body: "The pipeline is unstable. It passed but might have some issues. Please review the build: ${env.BUILD_URL}"
         }
     }
 }
