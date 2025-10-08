@@ -42,7 +42,7 @@ pipeline {
         stage('Deploy with Ansible') {
             steps {
                 echo 'Deploying the application using Ansible...'
-                // Run the Ansible playbook, passing the new image tag as a variable
+                // Run the Ansible playbook, passing the new image tag as variable
                 sh "ansible-playbook -i inventory.ini deploy.yaml --extra-vars 'docker_image_tag=${DOCKER_IMAGE_TAG}'"
             }
         }
