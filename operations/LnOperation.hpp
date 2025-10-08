@@ -1,5 +1,7 @@
 #ifndef LNOPERATION_HPP
 #define LNOPERATION_HPP
+#include<bits/stdc++.h>
+using namespace std;
 
 #include "IOperation.hpp"
 #include <cmath>

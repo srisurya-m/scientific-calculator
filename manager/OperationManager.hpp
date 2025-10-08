@@ -2,6 +2,8 @@
 #define OPERATIONMANAGER_HPP
 
 #include "operations/IOperation.hpp"
+#include<bits/stdc++.h>
+using namespace std;
 
 class OperationManager {
 private:

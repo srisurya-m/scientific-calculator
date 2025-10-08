@@ -1,4 +1,6 @@
 #include "OperationManager.hpp"
+#include<bits/stdc++.h>
+using namespace std;
 
 OperationManager* OperationManager::instance = nullptr;
 
@@ -8,7 +10,7 @@ OperationManager* OperationManager::getInstance() {
     if(instance == nullptr) {
         instance = new OperationManager();
     }
-    
+
     return instance;
 }
 

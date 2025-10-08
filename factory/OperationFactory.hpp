@@ -1,6 +1,7 @@
 #ifndef OPERATIONFACTORY_HPP
 #define OPERATIONFACTORY_HPP
-
+#include<bits/stdc++.h>
+using namespace std;
 #include <string>
 #include "operations/IOperation.hpp"
 

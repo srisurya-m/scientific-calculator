@@ -1,4 +1,6 @@
 #include "FactorialOperation.hpp"
+#include<bits/stdc++.h>
+using namespace std;
 
 double FactorialOperation::execute(double a, double b) {
     if(a < 0) 

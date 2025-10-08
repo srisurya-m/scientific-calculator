@@ -1,6 +1,7 @@
 #ifndef CALCULATORFACADE_HPP
 #define CALCULATORFACADE_HPP
-
+#include<bits/stdc++.h>
+using namespace std;
 #include <string>
 
 class CalculatorFacade {

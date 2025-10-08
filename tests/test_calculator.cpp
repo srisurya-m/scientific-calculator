@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include "../facade/CalculatorFacade.hpp"
+#include<bits/stdc++.h>
+using namespace std;
 
 TEST(CalculatorTests, SqrtOperation) {
     CalculatorFacade calc;
