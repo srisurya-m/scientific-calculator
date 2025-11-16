@@ -22,4 +22,4 @@ COPY --from=builder /app/build/calculator .
 
 CMD ["/bin/bash"]
 
-# demo
+# demonstration
